@@ -1,2 +1,2 @@
-*.class
-src/APIKey.java
+/bin
+/src/APIKey.java
