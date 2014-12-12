@@ -31,7 +31,8 @@ public class main {
 		String summonerName = JOptionPane.showInputDialog (null, "Enter the summoner name: ",
                 "Summoner Name", JOptionPane.QUESTION_MESSAGE).toLowerCase();
 		
-		String apiKey = "b40cf360-ac52-479d-b9eb-06dc99bdea83";	
+		//APIKey is a local class that holds a method that returns my API Key.
+		String apiKey = APIKey.getKey();	
 
 		summonerName.replace(" ", "");
 		JSONObject summID = readJsonFromAPI("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" + summonerName + "?api_key=" + apiKey);	
